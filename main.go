@@ -36,7 +36,9 @@ func main(){
 	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
 	fmt.Printf("Type: %T Value: %v\n", z, z)
 	zero()
-	typing()
+	typeConversion()
+	v := 42 
+	fmt.Printf("v is of type %T\n", v)
 }
 
 
@@ -79,7 +81,7 @@ func zero() {
 	fmt.Printf("%v %v %v %q\n", n, f, b, s)
 }
 
-func typing() {
+func typeConversion() {
 	var x, y int = 3, 4
 	var f float64 = math.Sqrt(float64(x*x + y*y))
 	var z uint = uint(f)
