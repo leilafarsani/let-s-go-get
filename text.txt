@@ -298,7 +298,7 @@ u := uint(f)
 Unlike in C, in Go assignment between items of different type requires an explicit 
 conversion. Try removing the float64 or uint conversions in the example and see what happens.
 
-Type inference
+Type inference:
 When declaring a variable without specifying an explicit type
 (either by using the := syntax or var = expression syntax),
 the variable's type is inferred from the value on the right hand side.
@@ -313,3 +313,17 @@ the new variable may be an int, float64, or complex128 depending on the precisio
 i := 42           // int
 f := 3.142        // float64
 g := 0.867 + 0.5i // complex128
+
+Constants:
+Constants are declared like variables, but with the const keyword.
+
+Constants can be character, string, boolean, or numeric values.
+
+Constants cannot be declared using the := syntax.
+
+Numeric Constants:
+Numeric constants are high-precision values.
+
+An untyped constant takes the type needed by its context.
+
+Note: An int can store at maximum a 64-bit integer, and sometimes less.
