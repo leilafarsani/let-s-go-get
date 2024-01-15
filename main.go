@@ -18,6 +18,8 @@ func main(){
 	fmt.Println("The time is", time.Now())
 	fmt.Println("My favorite number is", rand.Intn(10))
 	fmt.Printf("Now you have %g problems.\n", math.Sqrt(17))
+	fmt.Println(math.Pi)
+	fmt.Println(add(42, 13))
 
 }
 
@@ -25,4 +27,11 @@ func main(){
 func sayHello(name string){
 	fmt.Println("Hello", name)
 }
+
+
+func add(x int, y int) int {
+	return x + y
+}
+
+
 
