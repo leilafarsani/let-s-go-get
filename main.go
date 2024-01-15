@@ -7,7 +7,7 @@ import (
 	"math"
 )
 
-
+var c, python, java bool
 
 func main(){
 	var gender = "female"
@@ -23,8 +23,18 @@ func main(){
 	a, b := swap("hello", "world")
 	fmt.Println(a, b)
 	fmt.Println(split(17))
+	var l int
+	fmt.Println(l, c, python, java)
+	var i, j int = 1, 2
+	//var c, python, java = true, false, "no!"
+	fmt.Println(i, j, c, python, java, p)
+	
+	k := 3
+	c, python, java := true, false, "no!"
 
+	fmt.Println(i, j, k, c, python, java)
 }
+
 
 
 func sayHello(name string){
@@ -49,3 +59,4 @@ func split(sum int) (x, y int) {
 	return
 }
 
+var l, p int  = 9 , 11
