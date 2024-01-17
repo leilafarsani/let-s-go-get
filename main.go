@@ -43,6 +43,9 @@ func main(){
 	fmt.Println(needInt(Small))
 	fmt.Println(needFloat(Small))
 	fmt.Println(needFloat(Big))
+	getSum()
+	simpleSum()
+	forLikeWhileGetSum()
 }
 
 
@@ -112,4 +115,29 @@ const (
 func needInt(x int) int { return x*10 + 1 }
 func needFloat(x float64) float64 {
 	return x * 0.1
+}
+
+func getSum() {
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
+}
+
+
+func simpleSum() {
+	sum := 1
+	for ; sum < 1000; {
+		sum += sum
+	}
+	fmt.Println(sum)
+}
+
+func forLikeWhileGetSum() {
+	sum := 1
+	for sum < 1000 {
+		sum += sum
+	}
+	fmt.Println(sum)
 }
