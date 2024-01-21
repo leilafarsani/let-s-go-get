@@ -59,6 +59,8 @@ func main(){
 	switchPractice()
 	switchPractice2()
 	switchPractice3()
+	deferPractice()
+	deferStackingPractice()
 }
 
 
@@ -220,4 +222,20 @@ func switchPractice3() {
 	default:
 		fmt.Println("Good evening.")
 	}
+}
+
+func deferPractice() {
+	defer fmt.Println("world")
+
+	fmt.Println("hello")
+}
+
+func deferStackingPractice() {
+	fmt.Println("counting")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
 }
