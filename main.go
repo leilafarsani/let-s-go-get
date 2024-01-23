@@ -66,6 +66,7 @@ func main(){
 	structPractice()
 	pointersToStructsPractice()
 	structLiteralsPractice()
+	arraysPractice()
 }
 
 
@@ -289,5 +290,14 @@ func structLiteralsPractice() {
 	fmt.Println(v1, n, v2, v3)
 }
 
+func arraysPractice() {
+	var a [2]string
+	a[0] = "Hello"
+	a[1] = "World"
+	fmt.Println(a[0], a[1])
+	fmt.Println(a)
 
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+	fmt.Println(primes)
+}
 
