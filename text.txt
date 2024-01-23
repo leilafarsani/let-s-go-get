@@ -426,3 +426,6 @@ Unlike C, Go has no pointer arithmetic.
 
 Structs
 A struct is a collection of fields.
+
+Struct Fields
+Struct fields are accessed using a dot.
