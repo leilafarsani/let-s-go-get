@@ -62,6 +62,7 @@ func main(){
 	deferPractice()
 	deferStackingPractice()
 	pointerPractice()
+	fmt.Println(Vertex{1, 2})
 }
 
 
@@ -251,4 +252,9 @@ func pointerPractice() {
 	p = &j         // point to j
 	*p = *p / 37   // divide j through the pointer
 	fmt.Println(j) // see the new value of j
+}
+// Struct
+type Vertex struct {
+	X int
+	Y int
 }
